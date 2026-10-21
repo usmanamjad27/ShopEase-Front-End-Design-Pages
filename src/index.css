@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #1f2824;
+  background: #f8f8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: white;
+  background: #285b49;
+}
+
+.hero-texture {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 0.8px, transparent 0.8px);
+  background-size: 18px 18px;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
